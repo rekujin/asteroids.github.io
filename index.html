@@ -1,0 +1,43 @@
+<!doctype html>
+<html> 
+<head>
+    <title>Астероиды</title>
+    <meta charset='utf-8'>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div id="start-screen">
+    <h1>Игра Астероиды</h1>
+    <p>Инструкция к игре:
+        <br>— Управление кораблём - движением мыши
+        <br>— Пауза - Space (Пробел)
+        <br>— Выход в меню - Escape (Esc)
+        <br><br><br>Выберите корабль:</p>
+    <select id="spaceship-select">
+        <option value="none">Не выбран</option>
+        <option value="spaceship1">Космический корабль 1</option>
+        <option value="spaceship2">Космический корабль 2</option>
+    </select>
+    <button id="start-button">Начать игру</button>
+</div>
+
+<div id="game-screen" style="display: none;">
+    <div id="info">
+        <div id="lives"></div>
+        <div id="score"></div>
+        <div id="timer"></div>
+      </div>
+    <button id="pause-button">Пауза</button>
+    <button id="exit-button">Выход</button>
+    <canvas id='game' width='600' height='600'>Элемент не поддерживается</canvas>
+</div>
+
+<div id="game-over-screen" style="display: none;">
+    <div id="game-over-message"></div>
+    <button id="back-to-menu-button">Вернуться в меню</button>
+</div>
+	
+	<script type="text/javascript" src="game.js"></script>
+</body>
+</html>
